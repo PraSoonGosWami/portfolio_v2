@@ -1,0 +1,48 @@
+.Appbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Appbar > header{
+
+}
+.Appbar > header > h3{
+    font-family: Liu Jian Mao Cao;
+    font-weight: bolder;
+    margin-top: -10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+
+.Appbar > section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Appbar > section > h6{
+    margin-right: 12px;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+.HamburgerIcon{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .Appbar > section {
+        display: none;
+    }
+    .HamburgerIcon{
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .Appbar > header > h3{
+        font-size: 2.7em;
+    }
+}

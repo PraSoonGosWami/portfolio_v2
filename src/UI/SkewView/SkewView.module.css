@@ -1,0 +1,41 @@
+.SkewView {
+    width: 100%;
+    clip-path: polygon(
+            0 15%, /* left top */
+            100% 0, /* right top */
+            100% 85%, /* right bottom */
+            0 100% /* left bottom */
+    );
+    overflow: hidden;
+    padding: 100px 4px;
+    display: block;
+
+}
+.SkewView > h4{
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .SkewView{
+        clip-path: polygon(
+                0 10%, /* left top */
+                100% 0, /* right top */
+                100% 90%, /* right bottom */
+                0 100% /* left bottom */
+        );
+    }
+}
+
+@media (max-width: 400px) {
+
+    .SkewView > h4 {
+        font-size: 1.7em;
+    }
+}
+
+

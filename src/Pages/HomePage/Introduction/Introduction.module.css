@@ -1,0 +1,73 @@
+.Introduction{
+    display: block;
+    margin: 120px 12px 120px 12px;
+    box-sizing: border-box;
+}
+.Introduction > h3{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 16px 0;
+    font-weight: bolder;
+    animation: fadein 0.6s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0; }
+    to {opacity: 1; }
+}
+
+.Introduction > h6{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 28px 0;
+    animation: fadeup 0.7s ease-in-out;
+    animation-delay: 0.9s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeup {
+    from {opacity: 0; transform: translateY(20px)}
+    to {opacity: 1; transform: translateY(0)}
+}
+.Introduction > section{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 22px;
+    animation: fadein 0.6s ease-in-out;
+    animation-delay: 1.4s;
+    animation-fill-mode: backwards;
+}
+
+.Introduction > section > button{
+    margin-right: 16px;
+    font-weight: bold;
+}
+.Introduction > section > button:last-of-type{
+    border-width: 2px;
+}
+@media (max-width: 415px) {
+    .Introduction{
+        margin: 70px 6px 70px 6px;
+    }
+    .Introduction > h3{
+        font-size: 2.3em;
+    }
+    .Introduction > h6{
+        font-size: 1.1em;
+    }
+
+    .Introduction > section > button{
+        font-size: 0.9em;
+        margin-right: 18px;
+    }
+    .Introduction > section > button:last-of-type{
+        margin-right: 0;
+    }
+}
+@media (max-width: 360px) {
+    .Introduction > section > button{
+        padding: 10px;
+    }
+}
