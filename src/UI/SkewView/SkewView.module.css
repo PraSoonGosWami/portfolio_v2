@@ -18,9 +18,17 @@
     letter-spacing: 1px;
     font-size: 1.9em;
     font-weight: bold;
+    animation: fadeup 0.7s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
 }
 
-@media (max-width: 500px) {
+@keyframes fadeup {
+    from {opacity: 0; transform: translateY(50px)}
+    to {opacity: 1; transform: translateY(0)}
+}
+
+@media (max-width: 600px) {
     .SkewView{
         clip-path: polygon(
                 0 10%, /* left top */

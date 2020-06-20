@@ -1,0 +1,84 @@
+.Techs{
+    margin: 20px 0;
+    padding: 30px 0;
+    flex-wrap: nowrap;
+    text-align: center;
+    animation: fadeup 1s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+.Techs> main{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+@keyframes fadeup {
+    from {opacity: 0; transform: translateY(50px)}
+    to {opacity: 1; transform: translateY(0)}
+}
+
+.Techs> main > div > header{
+    width: 80px;
+    margin: 12px 4px;
+    transition: all 0.4s ease-in-out;
+
+}
+.Techs >main > div > header > svg{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.Techs >main  > div > h6{
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+@media (max-width: 400px) {
+    .Techs >main > div > header{
+        width: 70px;
+    }
+    .Techs >main > div > header > svg{
+        font-size: 70px;
+    }
+}
+
+.Techs > main > div >header:hover{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: rubberBand;
+}
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}

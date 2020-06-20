@@ -16,9 +16,9 @@
       "contrastText": "rgba(255, 255, 255, 1)"
     },
     "secondary": {
-      "light": "rgba(64, 111, 191, 0.7)",
-      "main": "rgba(64, 111, 191, 1)",
-      "dark": "rgba(64, 111, 191, 1)",
+      "light": "rgba(78, 161, 224,0.7)",
+      "main": "rgba(78, 161, 224,1)",
+      "dark": "rgba(78, 161, 224,1)",
       "contrastText": "#fff"
     },
     "error": {

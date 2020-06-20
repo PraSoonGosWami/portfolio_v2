@@ -10,7 +10,7 @@
 .Skills > div{
     animation: fadeup 1s ease-in-out;
     animation-delay: 0.2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
 }
 @keyframes fadeup {
     from {opacity: 0; transform: translateY(50px)}

@@ -5,7 +5,6 @@ import {ThemeProvider} from '@material-ui/styles';
 import DarkTheme from './UI/MaterialTheme/dark.json'
 import LightTheme from './UI/MaterialTheme/light.json'
 import Paper from "@material-ui/core/Paper";
-import {Route} from "react-router";
 import MainComponent from "./Components/MainComponent/MainComponent";
 
 function App() {
