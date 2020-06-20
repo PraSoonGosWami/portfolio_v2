@@ -1,9 +1,9 @@
 import React from 'react'
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Styles from './Features.module.css'
+import Styles from './Services.module.css'
 import Tooltip from "@material-ui/core/Tooltip";
-const Features = (props) => {
+const Services = (props) => {
     return(
         <Container maxWidth={"lg"} className={Styles.Features}>
             <Typography variant={"h4"}>Features</Typography>
@@ -29,4 +29,4 @@ const Features = (props) => {
     )
 }
 
-export default Features
+export default Services

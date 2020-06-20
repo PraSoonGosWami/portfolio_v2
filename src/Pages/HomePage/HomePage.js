@@ -2,11 +2,12 @@ import React from 'react'
 import Styles from './HomePage.module.css'
 import Introduction from "./Introduction/Introduction";
 import SkewView from "../../UI/SkewView/SkewView";
-import Features from "./Features/Features";
 const Skills = React.lazy(()=>import("./Skills/Skills"))
 const Work = React.lazy(()=>import("./Work/Work"))
 const Techs = React.lazy(()=> import('./Techs/Techs'))
-const HomePage = (props) => {
+const Services = React.lazy(()=>import("./Services/Services"))
+
+const HomePage = () => {
     return(
         <div className={Styles.HomePage}>
             <Introduction/>
@@ -17,7 +18,7 @@ const HomePage = (props) => {
             <SkewView title={"Techs & tools"}>
                 <Techs/>
             </SkewView>
-            <Features/>
+            <Services/>
         </div>
 
     )

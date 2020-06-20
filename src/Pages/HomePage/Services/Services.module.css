@@ -49,4 +49,7 @@
     .Features > h4 {
         font-size: 1.7em;
     }
+    .FeaturesList > ul > li{
+        font-size: 18px;
+    }
 }
