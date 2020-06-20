@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@iconify/icons-cib": "^1.0.3",
     "@iconify/icons-logos": "^1.0.11",
     "@iconify/react": "^1.1.3",

@@ -3,6 +3,7 @@ import Styles from './MainComponent.module.css'
 import {Route, Switch} from "react-router";
 import ProgressBar from "../../UI/ProgressBar/ProgressBar";
 import HomePage from "../../Pages/HomePage/HomePage";
+import AppFooter from "../../UI/AppFooter/AppFooter";
 
 const MainComponent = (props) => {
     return (
@@ -12,6 +13,7 @@ const MainComponent = (props) => {
                     <Route path={'/'} exact component={HomePage}/>
                 </Switch>
             </Suspense>
+            <AppFooter/>
         </div>
     )
 }

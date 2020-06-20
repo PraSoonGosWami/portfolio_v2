@@ -1,0 +1,76 @@
+.AppFooter{
+    background: linear-gradient(to left, rgba(78, 161, 224,1) , rgb(8, 150, 248));
+    position: static;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 48px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.AppFooter> header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.AppFooter> header > h1{
+    font-family: "Liu Jian Mao Cao";
+    font-size: 100px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: -30px;
+}
+
+.AppFooter> header > h6{
+    color: whitesmoke;
+    margin-left: 12px;
+}
+
+.AppFooterNav{
+    font-size: 18px;
+    margin: 22px 4px;
+    text-align: center;
+    padding-left: 12px;
+}
+.AppFooterNav > div{
+    margin-bottom: 8px;
+    color: whitesmoke;
+}
+.AppFooterSocial{
+    color: whitesmoke;
+    margin: 12px 8px;
+}
+.AppFooterSocial> h6{
+    letter-spacing: 1px;
+}
+.AppFooterSocial > p{
+    margin: 18px 0;
+    display: block;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.AppFooterSocial > section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.AppFooterSocial > section > a{
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+}
+
+.AppFooterSocial > section > a:last-of-type{
+    margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+    .AppFooter{
+        flex-direction: column;
+    }
+}
