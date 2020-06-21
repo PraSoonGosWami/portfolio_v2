@@ -1,0 +1,9 @@
+.SideDrawer{
+    margin: 50px;
+    width: 140px;
+}
+
+.SideDrawer  > div{
+    margin: 24px;
+    font-size: 1.3em;
+}

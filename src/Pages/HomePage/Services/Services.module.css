@@ -32,6 +32,7 @@
     margin: 16px 12px;
     font-size: 19px;
     letter-spacing: 1px;
+    word-spacing: 1px;
 }
 @media (max-width: 800px) {
 
@@ -50,6 +51,6 @@
         font-size: 1.7em;
     }
     .FeaturesList > ul > li{
-        font-size: 18px;
+        font-size: 17px;
     }
 }

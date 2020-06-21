@@ -1,17 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Styles from './Introduction.module.css'
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import {useHistory} from "react-router";
-
+import AxiosInstance from '../../../Utils/AxiosInstance'
+import CircularProgress from "@material-ui/core/CircularProgress";
 const Introduction = (props) => {
     const history = useHistory()
+    const [loading, setLoading] = useState(false)
     const contactButtonHandler = () => {
         history.push('/contact')
     }
 
     const cvButtonHandler = () => {
+        setLoading(true)
+        AxiosInstance.get('/cv.json')
+            .then(res=>{
+                window.open(res.data, "_blank")
+            })
+            .catch(err => {
+                window.alert("Something went wrong. Cannot fetch download URL")
+            })
+            .finally(()=>setLoading(false))
 
     }
     return (
@@ -33,7 +44,7 @@ const Introduction = (props) => {
                     variant={"outlined"}
                     onClick={()=>cvButtonHandler()}
                     size={"large"}>
-                    Download CV
+                    {loading ? <CircularProgress size={20} color={"inherit"}/>: "Download CV"}
                 </Button>
 
             </section>

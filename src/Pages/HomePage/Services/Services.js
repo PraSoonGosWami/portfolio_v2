@@ -2,11 +2,10 @@ import React from 'react'
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Styles from './Services.module.css'
-import Tooltip from "@material-ui/core/Tooltip";
 const Services = (props) => {
     return(
         <Container maxWidth={"lg"} className={Styles.Features}>
-            <Typography variant={"h4"}>Features</Typography>
+            <Typography variant={"h4"}>Services</Typography>
             <div className={Styles.FeaturesList}>
                 <ul>
                     <li>Static and dynamic websites</li>

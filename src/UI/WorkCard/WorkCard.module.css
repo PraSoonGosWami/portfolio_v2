@@ -1,5 +1,10 @@
+.WorkCardDiv{
+    width: 33%;
+    margin-top: 16px;
+    margin-right: 8px;
+}
 .WorkCard{
-    width: 350px;
+    height: inherit;
 }
 .WorkCard > h6{
     margin: 18px 12px;
@@ -7,29 +12,28 @@
     font-size: 1.1em;
 }
 .WorkCard > img{
-    width: inherit;
-    height: 200px;
+    width: 100%;
     object-fit: scale-down;
     transition: all 0.3s ease-in-out;
 }
 
 .WorkCard > p {
     margin: 18px 12px;
-    font-size: 0.85em;
+    font-size: 0.9em;
     letter-spacing: 1px;
+}
+.WorkCard > button{
+    margin-bottom: 16px;
+    margin-left: 8px;
 }
 
 .WorkCard>img:hover{
     transform: scale(1.1,1.1);
 }
 
-@media (max-width: 1160px) {
-    .WorkCard{
+@media (max-width: 770px) {
+    .WorkCardDiv{
         width: 100%;
-    }
-    .WorkCard > img{
-        width: inherit;
-        height: auto;
     }
     .WorkCard>img:hover{
         transform: none;

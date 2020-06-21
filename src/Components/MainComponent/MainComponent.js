@@ -12,8 +12,8 @@ const MainComponent = (props) => {
                 <Switch>
                     <Route path={'/'} exact component={HomePage}/>
                 </Switch>
+                <AppFooter/>
             </Suspense>
-            <AppFooter/>
         </div>
     )
 }

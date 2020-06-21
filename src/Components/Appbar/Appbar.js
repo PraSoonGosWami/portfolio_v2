@@ -33,7 +33,7 @@ const Appbar = (props) => {
 
                     <div className={Styles.HamburgerIcon}>
                         <Tooltip style={{marginLeft:"8px",marginTop:"4px"}} title={"Switch theme mode"}>
-                            <IconButton color={"inherit"} size={"small"}  onClick={props.handleChange}>
+                            <IconButton color={"inherit"} size={"small"}  onClick={props.drawerHandler}>
                                 <MenuRoundedIcon fontSize={"large"} />
                             </IconButton>
                         </Tooltip>
