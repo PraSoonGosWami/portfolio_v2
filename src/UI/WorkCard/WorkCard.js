@@ -12,7 +12,7 @@ const WorkCard = (props) => {
     const [raised, setRaised] = useState(false)
     const useStyles = makeStyles((theme) => ({
         card: {
-            backgroundColor: darkMode ? "rgba(33, 33, 33, 1)" : "rgba(252, 252, 252, 1)",
+            backgroundColor: darkMode ? "rgba(33, 33, 33, 1)" : "rgba(240, 240, 240, 1)",
             margin: "10px",
             cursor: "pointer",
         }

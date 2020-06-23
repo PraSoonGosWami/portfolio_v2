@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Styles from './ProjectsShowcase.module.css'
 import WorkCard from "../../../../UI/WorkCard/WorkCard";
 const ProjectsShowcase = (props) => {
@@ -13,7 +13,7 @@ const ProjectsShowcase = (props) => {
                     title={item.name}
                     img={item.img}
                     stack={item.stack}
-                    summary={item.details}
+                    summary={item.summary}
                 />
                 )
             })}

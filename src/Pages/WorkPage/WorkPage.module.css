@@ -1,0 +1,16 @@
+.WorkPage{
+    min-height: 100vh;
+}
+
+.WorkPage > h4{
+
+    letter-spacing: 1px;
+}
+
+.WorkPage > header{
+    margin-top: 40px;
+    margin-bottom: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

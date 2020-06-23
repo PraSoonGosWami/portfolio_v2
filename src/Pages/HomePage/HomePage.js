@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Styles from './HomePage.module.css'
 import Introduction from "./Introduction/Introduction";
 import SkewView from "../../UI/SkewView/SkewView";
@@ -8,6 +8,7 @@ const Techs = React.lazy(()=> import('./Techs/Techs'))
 const Services = React.lazy(()=>import("./Services/Services"))
 
 const HomePage = () => {
+    useEffect(()=>{window.scrollTo(0,0)},[])
     return(
         <div className={Styles.HomePage}>
             <Introduction/>

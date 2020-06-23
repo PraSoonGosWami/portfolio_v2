@@ -1,0 +1,60 @@
+.ContactPage{
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ContactPage > section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    filter: grayscale(99%) brightness(60%);
+    -webkit-filter: grayscale(99%) brightness(60%) ;
+    opacity: 0.6;
+}
+
+.ContactPageContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.ContactPageCard{
+    padding: 24px;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.ContactPageCard > p{
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+.ContactPageCard > h6{
+    text-align: center;
+    margin: 12px;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.ContactPageCard > a{
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.ContactPageCard> form > div{
+    margin: 10px 0;
+}
+
+.ContactPageCard > form > button{
+    margin-top: 22px;
+}
