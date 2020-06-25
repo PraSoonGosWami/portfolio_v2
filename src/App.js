@@ -8,9 +8,24 @@ import Paper from "@material-ui/core/Paper";
 import MainComponent from "./Components/MainComponent/MainComponent";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import {SnackBarProvider} from "@prasoongoswami/react_snackbar";
+import ReactGA from 'react-ga';
 
 
 function App() {
+    //google analytics
+    function initializeReactGA() {
+        ReactGA.initialize('UA-170869453-1');
+        ReactGA.pageview('/');
+        ReactGA.pageview('/about');
+        ReactGA.pageview('/work');
+        ReactGA.pageview('/contact');
+    }
+
+    useEffect(() => {
+        initializeReactGA()
+    }, [])
+
+
     const [darkMode, setDarkMode] = useState(false)
     const [drawer, setDrawer] = useState(false)
     const darkTheme = createMuiTheme(DarkTheme)

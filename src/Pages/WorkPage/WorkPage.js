@@ -16,6 +16,7 @@ const WorkPage = (props) => {
     const [dropDownValue, setDropDownValue] = useState("all")
     const [filteredArray, setFilteredArray] = useState(null)
     const {addAlert} = useAlert()
+
     useEffect(()=>{
         window.scrollTo(0,0)
         getProjects()

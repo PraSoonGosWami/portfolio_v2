@@ -5,6 +5,7 @@ import ProgressBar from "../../UI/ProgressBar/ProgressBar";
 import HomePage from "../../Pages/HomePage/HomePage";
 const WorkPage = React.lazy(()=>import( "../../Pages/WorkPage/WorkPage"))
 const ContactPage = React.lazy(()=>import( "../../Pages/ContactPage/ContactPage"))
+const AboutPage = React.lazy(()=>import( "../../Pages/AboutPage/AboutPage"))
 const AppFooter = React.lazy(()=>import( "../../UI/AppFooter/AppFooter"))
 
 const MainComponent = (props) => {
@@ -15,6 +16,8 @@ const MainComponent = (props) => {
                     <Route path={'/'} exact component={HomePage}/>
                     <Route path={'/work'} exact component={WorkPage}/>
                     <Route path={'/contact'} exact component={ContactPage}/>
+                    <Route path={'/about'} exact component={AboutPage}/>
+                    <Route component={HomePage}/>
                 </Switch>
                 <AppFooter/>
             </Suspense>

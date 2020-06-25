@@ -2,8 +2,7 @@
     min-height: 100vh;
 }
 
-.WorkPage > h4{
-
+.WorkPage > header > h4{
     letter-spacing: 1px;
 }
 
