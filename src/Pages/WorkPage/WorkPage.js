@@ -3,17 +3,19 @@ import Styles from './WorkPage.module.css'
 import Container from "@material-ui/core/Container";
 import ProgressBar from "../../UI/ProgressBar/ProgressBar";
 import AxiosInstance from '../../Utils/AxiosInstance'
-import ProjectsShowcase from "../HomePage/Work/ProjectsShowcase/ProjectsShowcase";
+import ProjectsShowcase from "../../Components/ProjectsShowcase/ProjectsShowcase";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import ProjectFilter from '../../Utils/ProjectFilter.json'
 import MenuItem from "@material-ui/core/MenuItem";
+import {useAlert} from "@prasoongoswami/react_snackbar";
 const WorkPage = (props) => {
     const [projects, setProjects] = useState(null)
     const [loading, setLoading] = useState(true)
     const [filters] = useState(ProjectFilter)
     const [dropDownValue, setDropDownValue] = useState("all")
     const [filteredArray, setFilteredArray] = useState(null)
+    const {addAlert} = useAlert()
     useEffect(()=>{
         window.scrollTo(0,0)
         getProjects()
@@ -27,7 +29,9 @@ const WorkPage = (props) => {
                 setProjects(res.data.reverse())
                 setFilteredArray(res.data)
             })
-            .catch(err => {})
+            .catch(err => {
+                addAlert({message:err.message,duration:5000})
+            })
             .finally(()=> setLoading(false))
     }
 
@@ -55,7 +59,7 @@ const WorkPage = (props) => {
 
     return(
         <Container maxWidth={"lg"} className={Styles.WorkPage}>
-            <header>
+            {filteredArray && <header>
                 <Typography variant={"h4"}>Work</Typography>
                 <TextField
                     value={dropDownValue}
@@ -68,7 +72,7 @@ const WorkPage = (props) => {
                         return <MenuItem key={code} value={code}>{filters[code]}</MenuItem>
                     })}
                 </TextField>
-            </header>
+            </header>}
             {loading && <ProgressBar/>}
             {!loading && filteredArray && <ProjectsShowcase data={filteredArray}/>}
         </Container>

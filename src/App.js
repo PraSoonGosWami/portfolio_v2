@@ -7,6 +7,8 @@ import LightTheme from './UI/MaterialTheme/light.json'
 import Paper from "@material-ui/core/Paper";
 import MainComponent from "./Components/MainComponent/MainComponent";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
+import {SnackBarProvider} from "@prasoongoswami/react_snackbar";
+
 
 function App() {
     const [darkMode, setDarkMode] = useState(false)
@@ -34,11 +36,13 @@ function App() {
     }
     return (
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-            <Paper style={{minHeight:"100vh"}}>
-                <Appbar checked={darkMode} handleChange={themeHandler} drawerHandler={drawerHandler}/>
-                <MainComponent/>
-                <SideDrawer  checked={darkMode} handleChange={themeHandler} drawer={drawer} drawerHandler={drawerHandler}/>
-            </Paper>
+            <SnackBarProvider>
+                <Paper style={{minHeight:"100vh"}}>
+                    <Appbar checked={darkMode} handleChange={themeHandler} drawerHandler={drawerHandler}/>
+                    <MainComponent/>
+                    <SideDrawer  checked={darkMode} handleChange={themeHandler} drawer={drawer} drawerHandler={drawerHandler}/>
+                </Paper>
+            </SnackBarProvider>
         </ThemeProvider>
     );
 }

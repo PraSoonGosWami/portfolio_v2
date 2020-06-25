@@ -1,0 +1,67 @@
+.ProjectDialog {
+}
+
+.ProjectDialog header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ProjectDialog header button {
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.ProjectDialogContent {
+    max-width: 500px;
+
+}
+.ProjectDialogContent > section{
+    width: 100%;
+    height: 0;
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 56.25%;
+
+}
+.ProjectDialogContent > section  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ProjectDialogContent > h6 {
+    margin-top: 12px;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.ProjectDialogContent > p {
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.ProjectDialogContent > footer {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.ProjectDialogContent > footer > a:first-of-type {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .ProjectDialogContent > p {
+        font-size: 0.9em;
+        letter-spacing: normal;
+    }
+    .ProjectDialogContent > footer > a{
+        font-size: 0.9em;
+    }
+}

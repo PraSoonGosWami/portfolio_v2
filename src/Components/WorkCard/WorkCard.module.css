@@ -39,8 +39,14 @@
 .WorkCard>img:hover{
     transform: scale(1.1,1.1);
 }
+@media (max-width: 900px) {
+    .WorkCardDiv{
+        flex-basis: 48%;
+    }
 
-@media (max-width: 770px) {
+}
+
+@media (max-width: 670px) {
     .WorkCardDiv{
         width: 100%;
     }

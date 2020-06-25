@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 670px) {
     .ProjectsShowcase{
         flex-direction: column;
         justify-content: space-evenly;

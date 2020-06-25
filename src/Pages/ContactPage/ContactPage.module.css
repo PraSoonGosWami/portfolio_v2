@@ -1,9 +1,10 @@
 .ContactPage{
-    min-height: 90vh;
+    min-height: 95vh;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
+
 }
 
 .ContactPage > section{
@@ -13,9 +14,9 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    filter: grayscale(99%) brightness(60%);
-    -webkit-filter: grayscale(99%) brightness(60%) ;
-    opacity: 0.6;
+    filter: grayscale(99%) ;
+    -webkit-filter: grayscale(99%);
+    opacity: 0.7;
 }
 
 .ContactPageContainer{
@@ -57,4 +58,10 @@
 
 .ContactPageCard > form > button{
     margin-top: 22px;
+}
+
+@media (max-width: 700px) {
+    .ContactPageContainer{
+        justify-content: center;
+    }
 }
