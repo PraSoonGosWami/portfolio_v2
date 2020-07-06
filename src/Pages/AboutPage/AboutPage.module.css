@@ -69,7 +69,7 @@
 .AboutPageSocial {
     display: flex;
     align-items: center;
-    justify-content: normal;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

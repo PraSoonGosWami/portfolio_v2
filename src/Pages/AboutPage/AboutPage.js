@@ -8,7 +8,7 @@ import PhoneIcon from '@material-ui/icons/Phone'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import MyImg from '../../Assets/me.jpg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faGooglePlay, faInstagram, faLinkedinIn, faYoutube, faFacebook} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faGooglePlay, faTwitter, faInstagram, faLinkedinIn, faYoutube, faFacebook} from "@fortawesome/free-brands-svg-icons";
 
 const AboutPage = (props) => {
     const mapLink = "https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5897112,88.3793114,11.65z/data=!4m5!3m4!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.572646!4d88.363895"
@@ -51,7 +51,7 @@ const AboutPage = (props) => {
             </div>
             <Typography variant={"h5"}>Or somewhere else on the web</Typography>
 
-            <Container maxWidth={"md"} className={Styles.AboutPageSocial}>
+            <Container maxWidth={"lg"} className={Styles.AboutPageSocial}>
 
                 <Link underline={"none"} color={"inherit"} href="https://github.com/PraSoonGosWami" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} size="2x"/>
@@ -68,6 +68,10 @@ const AboutPage = (props) => {
                 <Link underline={"none"} color={"inherit"} href="https://www.youtube.com/channel/UCqvFDpxC-Tavqn8LCVcZqEg" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faYoutube} size="2x"/>
                     <Typography variant={"h6"}>YouTube</Typography>
+                </Link>
+                <Link underline={"none"} color={"inherit"} href="https://twitter.com/PraSoonGosWami4" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                    <Typography variant={"h6"}>Twitter</Typography>
                 </Link>
                 <Link underline={"none"} color={"inherit"} href="https://www.instagram.com/prasoon_goswami/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} size="2x"/>

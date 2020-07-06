@@ -6,7 +6,7 @@ import HomePage from "../../Pages/HomePage/HomePage";
 const WorkPage = React.lazy(()=>import( "../../Pages/WorkPage/WorkPage"))
 const ContactPage = React.lazy(()=>import( "../../Pages/ContactPage/ContactPage"))
 const AboutPage = React.lazy(()=>import( "../../Pages/AboutPage/AboutPage"))
-const AppFooter = React.lazy(()=>import( "../../UI/AppFooter/AppFooter"))
+const AppFooter = React.lazy(()=>import( "../AppFooter/AppFooter"))
 
 const MainComponent = (props) => {
     return (

@@ -1,12 +1,11 @@
 import React from 'react'
 import Styles from './AppFooter.module.css'
 import Typography from "@material-ui/core/Typography";
-import NavItem from "../../Components/NavItem/NavItem";
+import NavItem from "../NavItem/NavItem";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
-import {faGooglePlay} from '@fortawesome/free-brands-svg-icons'
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 const AppFooter = (props) => {
     return(
@@ -31,8 +30,8 @@ const AppFooter = (props) => {
                     <a href="https://www.linkedin.com/in/prosoon-goswami/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedinIn} size="lg"/>
                     </a>
-                    <a href="https://play.google.com/store/apps/developer?id=DynoPie&hl=en" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGooglePlay} size="lg"/>
+                    <a href="https://twitter.com/PraSoonGosWami4" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faTwitter} size="lg"/>
                     </a>
                     <a href="https://www.youtube.com/channel/UCqvFDpxC-Tavqn8LCVcZqEg" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faYoutube} size="lg"/>
