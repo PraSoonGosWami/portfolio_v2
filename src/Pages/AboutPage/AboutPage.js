@@ -19,11 +19,11 @@ const AboutPage = (props) => {
                 <main>
                     <Typography>I'm Prasoon Goswami, B.Tech in Information Technolgy from <Link
                         href={"https://heritageit.edu/"} target={"_blank"} color={"secondary"}>Heritage Institute of
-                        Technology, Kolkata</Link>. I'm a self taught <strong>Full stack web and android
+                        Technology, Kolkata</Link>. I'm a self taught <strong>Full stack web and hybird mobile application
                         developer</strong>.</Typography>
                     <br/>
                     <Typography>I build small and medium web applications using React, custom plugins, features,
-                        animations, and coding interactive layouts. I also have experience with Android Native app
+                        animations, and coding interactive layouts. I also have experience with Flutter, Ionic, Android Native app
                         development and backend development with NodeJs, MongoDB and Firebase</Typography>
                     <br/>
                     <Typography>You can find more about my projects, publications and skills on <Link

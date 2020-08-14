@@ -28,8 +28,8 @@ const Introduction = (props) => {
     return (
         <Container maxWidth={"md"} className={Styles.Introduction}>
             <Typography variant={"h3"}>Hi, I'm Prasoon Goswami</Typography>
-            <Typography color={"textSecondary"} variant={"h6"}>Currently doing B.tech in Information technology, a
-                self-taught Full Stack JavaScript Developer and Android (Native) Developer. Have worked on IoT and Cloud
+            <Typography color={"textSecondary"} variant={"h6"}>B.tech in Information technology, a
+                self-taught Full Stack JavaScript Developer and Hybrid Mobile Application Developer. Have worked with Flutter, Ionic and Cloud
                 computing. I love open source and building side projects. </Typography>
             <section>
                 <Button

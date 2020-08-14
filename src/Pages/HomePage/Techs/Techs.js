@@ -10,9 +10,8 @@ import androidIcon from '@iconify/icons-logos/android-icon';
 import javascriptIcon from '@iconify/icons-logos/javascript';
 import javaIcon from '@iconify/icons-logos/java';
 import pythonIcon from '@iconify/icons-logos/python';
-import ubuntuIcon from '@iconify/icons-logos/ubuntu';
-import raspberryPi from '@iconify/icons-logos/raspberry-pi';
-import adobeXd from '@iconify/icons-cib/adobe-xd';
+import ionic from '@iconify/icons-logos/ionic';
+import Flutter from '@iconify/icons-logos/flutter';
 
 const Techs = (props) => {
     return(
@@ -68,15 +67,15 @@ const Techs = (props) => {
                 </div>
                 <div>
                     <header>
-                        <Icon icon={adobeXd}/>
+                        <Icon icon={Flutter}/>
                     </header>
-                    <Typography variant={"h6"}>Adobe XD</Typography>
+                    <Typography variant={"h6"}>Flutter</Typography>
                 </div>
                 <div>
                     <header>
-                        <Icon icon={raspberryPi}/>
+                        <Icon icon={ionic}/>
                     </header>
-                    <Typography variant={"h6"}>Raspberry Pi</Typography>
+                    <Typography variant={"h6"}>Ionic</Typography>
                 </div>
 
             </main>

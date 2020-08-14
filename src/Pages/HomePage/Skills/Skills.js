@@ -17,7 +17,7 @@ const Skills = (props) => {
                 <header>
                     <img src={ADEVIMG} alt={"Android development"}/>
                 </header>
-                <Typography variant={"h6"}>Android development</Typography>
+                <Typography variant={"h6"}>Mobile app development</Typography>
             </div>
             <div>
                 <header>
