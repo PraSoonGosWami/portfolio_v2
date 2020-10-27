@@ -1,7 +1,8 @@
 .WorkCardDiv{
     margin-top: 16px;
-    margin-right: 8px;
-    flex-basis: 32%;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 30%;
     animation: fadeup 0.6s ease-in-out;
     animation-delay: 0.6s;
     animation-fill-mode: backwards;

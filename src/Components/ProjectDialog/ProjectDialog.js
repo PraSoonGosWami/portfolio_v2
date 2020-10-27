@@ -6,9 +6,8 @@ import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from '@material-ui/icons/Close';
 import Styles from './ProjectDialog.module.css'
 import Typography from "@material-ui/core/Typography";
-import {CircularProgress, Link} from "@material-ui/core";
+import {Link} from "@material-ui/core";
 import AxiosInstance from '../../Utils/AxiosInstance'
-import {set} from "react-ga";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import {useAlert} from "@prasoongoswami/react_snackbar";
 

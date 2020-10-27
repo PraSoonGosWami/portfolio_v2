@@ -36,7 +36,7 @@ const WorkCard = (props) => {
              onMouseOut={() => setRaised(false)}>
             <Card className={classes.card + " " + Styles.WorkCard} raised={raised}>
                 <Typography variant={"h6"}>{props.title}</Typography>
-                <img src={props.img}/>
+                <img src={props.img} alt=""/>
                 <Typography>{props.stack}</Typography>
                 <Typography>{props.summary}</Typography>
                 <Button

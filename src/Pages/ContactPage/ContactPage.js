@@ -48,7 +48,7 @@ const ContactPage = (props) => {
     return (
         <div className={Styles.ContactPage}>
             <section>
-                <iframe width="100%" height="100%"
+                <iframe width="100%" height="100%" title={"Maps BG"}
                         src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Kolkata+(Prasoon%20Goswami)&amp;ie=UTF8&amp;t=p&amp;z=14&amp;iwloc=B&amp;output=embed"
                         frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
                 </iframe>
