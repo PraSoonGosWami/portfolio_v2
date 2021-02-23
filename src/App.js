@@ -34,9 +34,14 @@ function App() {
     //loads previous set theme mode if available
     useEffect(()=>{
         const theme = localStorage.getItem("theme")
+
         if(theme){
             setDarkMode(JSON.parse(theme).value)
         }
+        /*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // dark mode
+            setDarkMode(true)
+        }*/
     },[])
 
     //handles theme changer button

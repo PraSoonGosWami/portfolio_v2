@@ -14,7 +14,7 @@ import HideOnScroll from "../../Utils/HideOnScroll";
 const Appbar = (props) => {
     return (
         <HideOnScroll {...props}>
-            <AppBar elevation={3} color={"primary"} position={"sticky"}>
+            <AppBar elevation={0} color={"primary"} position={"sticky"}>
                 <Toolbar className={Styles.Appbar}>
                     <header>
                         <Typography color={"inherit"} variant={"h3"}>P</Typography>
