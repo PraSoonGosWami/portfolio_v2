@@ -14,7 +14,7 @@
     "@material-ui/lab": "^4.0.0-alpha.55",
     "@material-ui/styles": "^4.10.0",
     "@prasoongoswami/react_snackbar": "^1.0.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
